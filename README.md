@@ -3,9 +3,9 @@
 ## Instructions
 
 1. [Fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) so you can edit it.
-2. Click the [Actions](../Actions) tab on your fork and click the **I understand my workflows, go ahead and run them** button to enable them.
+2. Navigate to the **Actions** tab and click the "I understand my workflows, go ahead and run them" button to enable them.
    ![Actions tab with "I understand my workflows" button](https://aws1.discourse-cdn.com/github/original/2X/8/8a28c79db26e3c2d82f2d0694ae0762b2ef7763b.png)
-3. Edit the [config/bde_rev2.conf](config/bde_rev2.conf) to enable/disable features. Edit [config/bde_rev2.keymap](config/bde_rev2.keymap) to change the keymap. Lastly, make sure the [build.yml](build.yml) file has your board in the "boards" list.
+3. Edit the [config/bde_rev2.conf](config/bde_rev2.conf) to enable/disable features. Edit [config/bde_rev2.keymap](config/bde_rev2.keymap) to change the keymap. Lastly, make sure the [build.yaml](build.yaml) file has your board in the "boards" list.
 4. After committing your changes, your firmware will begin compiling. Assuming there are no typos or other problems, it will eventually be [downloadable from the Actions tab](https://zmk.dev/docs/user-setup#installing-the-firmware).
 5. [Flash the firmware](https://zmk.dev/docs/user-setup#flashing-uf2-files) that matches the board you're using, e.g. bde_rev2-nice_nano_v2-zmk.uf2 for a nice!nano v2.
 
@@ -15,7 +15,7 @@ Don't forget to [check the ZMK docs](https://zmk.dev/docs/troubleshooting).
 
 ### There was an error and the build didn't finish.
 
-**This is probably an error in the keymap.** Look closely at whatever changes you made.
+**There is probably an error in your keymap.** Look closely at whatever changes you made.
 
 ZMK syntax is very different from QMK syntax. Note that when editing keymaps, each ZMK code is generally preceded by a reference categorizing what that code does.
 
