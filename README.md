@@ -9,7 +9,7 @@
 4. After committing your changes, your firmware will begin compiling. Assuming there are no typos or other problems, it will eventually be [downloadable from the Actions tab](https://zmk.dev/docs/user-setup#installing-the-firmware).
 5. [Flash the firmware](https://zmk.dev/docs/user-setup#flashing-uf2-files) that matches the board you're using, e.g. `bde_rev2-nice_nano_v2-zmk.uf2` for a nice!nano v2.
 
-## Quick Questions
+## Common Problems
 
 ### There was an error and the build didn't finish.
 
@@ -37,7 +37,7 @@ And double-check the Kconfig file in the build results to make sure what you've 
 
 #### The OLED can be a bit finicky.
 - As of mid-July 2022, [there is a known issue with OLEDs not being re-initialized after power off](https://github.com/zmkfirmware/zmk/issues/674).
-- If using a nice!nano v2 without a battery, the RAW pin does not always deliver consistent voltage.
+- If using a nice!nano v2 without a battery, its RAW pin does not always deliver consistent voltage. This can result in the OLED turning off immediately after boot, or failing to turn on.
 
 Try the following:
 
